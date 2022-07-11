@@ -50,7 +50,7 @@ npm install @angular/cli@latest (To leatest version) OR
 ng new app-name
 ```
 * Output screenshot: 
-<img src="assets/images/ng new appname.png">
+<img src="src/assets/images/ng new appname.png">
 
 ### Step 4 : Run angular ###
 
@@ -64,9 +64,9 @@ ng s -o
 ```
 * Sample ScreenShots:
 
-<img src="assets/images/ng s -o.png">
+<img src="src/assets/images/ng s -o.png">
 
-<img src="assets/images/project -run.png">
+<img src="src/assets/images/project -run.png">
 
 ### Step 5 : Install ag-grid-community ###
 
@@ -171,7 +171,7 @@ export class AppComponent {
 
 ### Output : ###
 
-<img src="assets/images/output1.png">
+<img src="src/assets/images/output1.png">
 
 # Obtaining the row data from api using http #
 
@@ -242,13 +242,13 @@ this.rowData$ = this.http.get<any[]>('https://www.ag-grid.com/example-assets/row
 ```
 ### Sample screen after obtaing the row data from hardadta URL ###
 
-<img src="assets/images/output after rl data.png">
+<img src="src/assets/images/output after rl data.png">
 
 <a href="https://www.ag-grid.com/example-assets/row-data.json">Here is the URL lINK</a>
 
 ### ScreenShot of URL data ###
 
-<img src="assets/images/url.png">
+<img src="src/assets/images/url.png">
 
 # Sorting and filtering for every columns #
 
@@ -281,7 +281,7 @@ colDefs : ColDef[] =[
 ```
 
 * Output ScreenShot: 
-<img src="assets/images/defaultColDefs.png">
+<img src="src/assets/images/defaultColDefs.png">
 
 * We can select the multiple rows and animate them with sorting by adding attribute in htlm as below:
 
@@ -341,4 +341,4 @@ clearselection(){
 
 * Output:
 
-<img src="assets/images/clearbutton.png">
+<img src="src/assets/images/clearbutton.png">
