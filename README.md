@@ -314,7 +314,7 @@ onCellClicked(event : CellClickedEvent){
 
 * Output Screenshot:
 
-<img src="assets/images/cellclickevent.png">
+<img src="src/assets/images/cellclickevent.png">
 
 # Utilizing api #
 
