@@ -1,7 +1,7 @@
 # Learning Angular ag-grid #
 
 * <a href="https://youtu.be/_cRDVM6NlPk"> Click me to watch video </a>
-* <a href=""https://www.ag-grid.com/angular-data-grid/> click me to visit the documentation </a>
+* <a href="https://www.ag-grid.com/angular-data-grid/"> click me to visit the documentation </a>
 
 ## What is angular ag-grid? ##
 
