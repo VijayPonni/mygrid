@@ -1,7 +1,11 @@
+<app-learn-model></app-learn-model>
+
+
 <button (click) = "clearselection()"> clear all </button>
 <ag-grid-angular
 class="ag-theme-alpine"
-style="height:100vh;width:100vw"
+style="width:50%"
+domLayout="print"
 [rowData]="rowData$ | async"
 [columnDefs]="colDefs"
 [defaultColDef]="defaultColDef"

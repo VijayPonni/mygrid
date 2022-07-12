@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { LearnModelComponent } from './learn-model/learn-model.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LearnModelComponent
   ],
   imports: [
     BrowserModule,

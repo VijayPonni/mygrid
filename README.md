@@ -345,3 +345,90 @@ clearselection(){
 * Output:
 
 <img src="src/assets/images/clearbutton.png">
+
+#  Other important conceptsin  ag-grid #
+
+## domLayout ##
+* domLayout is an attribute which can be useg in ag-grid componenet with the any of following three values as follows:
+  * domlayout = "normal"     --> It displays the normal grid.
+  * domlayout = "autoHeight" --> It adjustes the rows and provide scroll bar.
+  * domlayout = "print"      --> No scroll bars provided.
+
+# model.ts file in angular #
+
+* In simple words , it helps to define data types in seperate folder.
+
+* models in angular is used to store the data.
+
+* Mostly it deponds on two different types as 
+    1  --> interface 
+    2  --> classes
+
+* The reason to use models in application is  <b> to validate the data type </b> of an typical data strctures like objects or table data.
+
+
+* We can export the model interface files and can be obtained whereever we need in our application by importing it.
+
+## generating model using angular cli ##
+
+* We must use the below command in required directory .
+
+```javascript 
+
+ng g interface modelFileName --type=model
+
+```
+
+* Example :
+
+```javascript
+ng g interface learn-model --type=model
+```
+* Output :
+
+<img src="src/assets/images/modelDemo.png">
+
+* We may create class also that belongs to the user's requirement.
+
+```javascript
+Example :
+ng g class learn-model --type=model
+```
+* NOTE :  We can do this mannaly without generating angular cli .
+
+## Utilizing the generated model in  reqired component ##
+
+* Mostly , we will use this model for row data attribute in ag-grid .
+
+* So , let's take an simple component to display the row data.
+
+### Step : 1  .html ###
+
+* Assign [rowData] and  [columnDefs] in ag-grid.
+
+<img src="src/assets/images/model.html.png">
+
+### Step : 2 bind in .ts file ###
+
+* First of all , assign the variable with public keyword and assign it to the interface name with [] and with the ow data .
+
+<img src="src/assets/images/rowdata.png">
+
+
+* Kindly import the inteface in the .ts to utilize the interface for validatio of similar datatype.
+
+<img src="src/assets/images/import.png">
+
+### Step : 3 assigning type of data in model.ts file ###
+
+* Just need to assign the row data values to correct datatype reqired like number,boolean and etc.
+
+<img src="src/assets/images/datatypein_model.ts.png">
+
+### Sample screen if any type of data is mismatch interface  ###
+
+* The purpose of model interface is to omit unwanted errors in application as it is very large program.
+
+ * It will show error if the data is mismatches with the intrface datatypes.
+
+ <img src="src/assets/images/error_in_model.png">
